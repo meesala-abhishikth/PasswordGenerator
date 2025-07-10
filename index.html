@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <title>Advanced Password Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2><i class="fas fa-key"></i> Password Generator</h2>
+      <div class="result-container">
+  <span id="result">Click "Generate Password"</span>
+  <div>
+    <button class="btn copy-btn" id="clipboard" title="Copy to clipboard">
+      <i class="fas fa-copy"></i>
+    </button>
+    <button class="btn eye-btn" id="toggle-visibility" title="Show/Hide Password">
+      <i class="fas fa-eye"></i>
+    </button>
+  </div>
+</div>
+      <div class="strength" id="strength">Strength: <span id="strength-value">-</span></div>
+      <div class="settings">
+        <div class="setting">
+          <label>Password Length</label>
+          <input type="number" id="length" min="4" max="50" value="20">
+        </div>
+        <div class="setting"><label>Uppercase Letters</label><input type="checkbox" id="uppercase" checked></div>
+        <div class="setting"><label>Lowercase Letters</label><input type="checkbox" id="lowercase" checked></div>
+        <div class="setting"><label>Numbers</label><input type="checkbox" id="numbers" checked></div>
+        <div class="setting"><label>Symbols</label><input type="checkbox" id="symbols" checked></div>
+      </div>
+      <div id="error-message"></div>
+      <button class="btn btn-large" id="generate"><i class="fas fa-magic"></i> Generate Password</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

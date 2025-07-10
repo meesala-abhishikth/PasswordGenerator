@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #1f1f2e;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  width: 400px;
+  max-width: 95%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.result-container {
+  background: #2a2a3d;
+  border-radius: 8px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  font-size: 16px;
+  min-height: 48px;
+  margin-bottom: 10px;
+}
+
+#result {
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.result-container .btn {
+  background: none;
+  border: none;
+  color: #00bcd4;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.settings {
+  margin-top: 20px;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.2);
+  accent-color: #00bcd4;
+}
+
+input[type="number"] {
+  width: 60px;
+  padding: 6px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+.btn {
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  margin-top: 15px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #009cb1;
+}
+
+#strength {
+  margin-top: 10px;
+  text-align: right;
+  font-size: 14px;
+}
+
+#error-message {
+  color: #ff6b6b;
+  text-align: center;
+  margin-top: 10px;
+}
